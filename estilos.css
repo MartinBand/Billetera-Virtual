@@ -45,13 +45,13 @@ nav{
 #logo{
     margin-right: 30px;
     width: 90px;
-    background-color:var(--azulmp);
+    background-color: var(--azulosc);
     margin-left: 80px;
 }
 
 #nombre{
     width:50px;
-    color: white;
+    color: var(--griscl);
 }
 
 #perfil{
@@ -63,8 +63,12 @@ nav{
 
 #saludo{
     font-size: 1.2em;
-    color: white;
+    color: var(--griscl);
     margin-right: 10px;
+}
+
+#saludo2{
+    margin-left: 10px;
 }
 
 /* Aca comienza el header */
@@ -96,7 +100,7 @@ li{
 }
 
 li:hover{
-    background-color: var(--azulcl);
+    background-color: var(--griscl);
     transition: 0.3s;
 }
 
@@ -110,19 +114,21 @@ a{
     font-weight: 600;
 }
 
+
+
 svg{
     margin-right: 20px;
 }
 
 #inicio{
     margin-bottom: 100px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
 #cerrar{
     margin-top: 100px;
-    padding-top: 20px;
+    padding: 20px 0;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 
@@ -198,7 +204,7 @@ svg{
 .btn:hover{
     background-color: var(--azulmp);
     transition: 0.3s;
-    color: white;
+    color: var(--griscl);
 }
 
 .span1{
