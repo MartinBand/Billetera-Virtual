@@ -96,7 +96,8 @@ li{
     flex-direction: row;
     align-items:center;
     justify-content: start;
-    margin: 20px 20px;
+    margin: 0 20px;
+    padding: 20px 0;
 }
 
 li:hover{
@@ -113,8 +114,6 @@ a{
     color: var(--azulosc);
     font-weight: 600;
 }
-
-
 
 svg{
     margin-right: 20px;
@@ -366,7 +365,24 @@ svg{
     border-top: 2px solid black;
     width: 90%;
 }
+.contenedor6{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-color: var(--azulosc);
+    width: 80%;
+    height: 150px;
+}
 
+.banner{
+    font-size: 1em;
+    color: var(--griscl);
+}
+
+img{
+    width: 50%;
+    height: 80%;
+}
 .principal2{
     display: flex;
     flex-direction: column;
@@ -407,6 +423,7 @@ svg{
 
 .titulo{
     font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .contenedor5{
@@ -432,12 +449,19 @@ svg{
     display: flex;
     align-items:center;
     justify-content: start;
-    width: 100%;
+    width: 85%;
     height: 40px;
     font-size: 0.8em;
     box-sizing: border-box;
     font-weight: 200;
     opacity: 0.8;
+}
+
+.gastos2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .input3{
