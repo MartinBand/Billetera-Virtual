@@ -211,7 +211,7 @@ svg{
     margin-left: 15px;
 }
 
-.input1{
+#input1{
     font-size: 1.6em;
     width: 200px;
     height: 40px;
@@ -222,26 +222,27 @@ svg{
     margin-bottom: 5px;
 }
 
-.input1:hover{
+#input1:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
 }
 
-.input1::placeholder{
+#input1::placeholder{
     font-size: 0.5em;
 }
 
 .ingresado2{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    width: 100%;
 }
 
 .subrayado{
     content: '';
     border-top: 2px solid black;
-    width: 225px;
+    width: 60%;
     margin-left: 15px;
 }
 
@@ -326,6 +327,15 @@ svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.resumen3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .dineroIngresado{
@@ -340,7 +350,7 @@ svg{
     margin-left: 15px;
 }
 
-.input2{
+#p{
     font-size: 1.2em;
     width: 80%;
     height: 40px;
@@ -351,24 +361,22 @@ svg{
     margin-bottom: 5px;
 }
 
-.input2:hover{
+#p:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
-}
-
-.input2::placeholder{
-    font-size: 0.5em;
 }
 
 .subrayado2{
     content: '';
     border-top: 2px solid black;
-    width: 90%;
+    margin-left: 10px;
+    width: 85%;
 }
+
 .contenedor6{
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     background-color: var(--azulosc);
     width: 80%;
     height: 150px;
@@ -377,6 +385,9 @@ svg{
 .banner{
     font-size: 1em;
     color: var(--griscl);
+    align-self: start;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 img{
@@ -393,7 +404,7 @@ img{
     height:calc(100vh - 100px)
 }
 
-.contenedor2{
+#contenedor2{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -426,7 +437,7 @@ img{
     margin-bottom: 10px;
 }
 
-.contenedor5{
+#formulario{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -441,9 +452,7 @@ img{
     align-items: center;
     justify-content: space-around;
     width: 95%;
-    
 }
-
 
 .gastos1{
     display: flex;
@@ -464,7 +473,7 @@ img{
     justify-content: center;
 }
 
-.input3{
+#input3{
     font-size: 1em;
     width: 80%;
     height: 40px;
@@ -475,12 +484,32 @@ img{
     margin-bottom: 5px;
 }
 
-.input3:hover{
+#input3:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
 }
 
-.input3::placeholder{
+#input3::placeholder{
+    font-size: 0.8em;
+}
+
+#input4{
+    font-size: 1em;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+#input4:hover{
+    background-color: var(--azulcl);
+    transition: 0.3s;
+}
+
+#input4::placeholder{
     font-size: 0.8em;
 }
 
@@ -495,3 +524,9 @@ img{
     width: 100%;
 }
 
+.insertar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
