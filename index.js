@@ -1,7 +1,6 @@
 
 let formulario = document.getElementById(`formulario`)
 let contenedor2 = document.getElementById(`contenedor2`)
-let formulario2 = document.getElementById(`formulario2`)
 
 const ingresarGasto = (event)=>{ 
     event.preventDefault()
