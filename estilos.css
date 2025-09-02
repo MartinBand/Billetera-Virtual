@@ -49,8 +49,8 @@ nav{
     margin-left: 80px;
 }
 
-#nombre{
-    width:50px;
+#nombreBilletera{
+    width:300px;
     color: var(--griscl);
 }
 
@@ -67,12 +67,12 @@ nav{
     margin-right: 10px;
 }
 
-#saludo2{
+#saludoIcono{
     margin-left: 10px;
 }
 
 /* Aca comienza el header */
-
+/* Aca comienza el aside */
 header{
     display: flex;
     flex-direction: row;
@@ -91,31 +91,31 @@ aside{
     height:calc(100vh - 100px);
 }
 
-li{
+aside ul li{
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content: start;
-    margin: 0 20px;
-    padding: 20px 0;
 }
 
-li:hover{
-    background-color: var(--griscl);
-    transition: 0.3s;
-}
-
-a{
+aside ul li a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
+    width: 100%;
     font-size: 0.8em;
     color: var(--azulosc);
     font-weight: 600;
+    padding: 20px 25px;
 }
 
-svg{
+aside ul li a:hover{
+    background-color:#c5F5F5;
+    transition: 0.3s;
+}
+
+.iconoLista{
     margin-right: 20px;
 }
 
@@ -126,12 +126,13 @@ svg{
 }
 
 #cerrar{
-    margin-top: 100px;
-    padding: 20px 0;
+    margin-top: 90px;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 
-.principal1{
+/* Aca comienza la seccion uno */
+
+.seccionUno{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -142,7 +143,7 @@ svg{
     margin-left: 100px;
 }
 
-.contenedor1{
+.contenedorUno{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,26 +151,25 @@ svg{
     width: 100%;
 }
 
-.ingresado{
+.cajaUno{
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     width: 80%;
     height: 150px;
-    border: 2px black;
     border-radius: 10px;
     margin: 10px 0;
     box-shadow:5px 5px 10px gray;
     background-color: white;
 }
 
-.ingresado:hover{
+.cajaUno:hover{
     background-color: var(--griscl);
     transition: 0.3s;
 }
 
-.ingresado1{
+.ingresadoCabecera{
     display: flex;
     flex-direction: row;
     align-items:start;
@@ -178,7 +178,7 @@ svg{
     height: 40px;
 }
 
-.dineroIngresado{
+.titulo{
     font-size: 0.8em;
     margin-left: 20px;
     font-weight: 200;
@@ -193,7 +193,6 @@ svg{
     color: var(--azulosc);
     width: 20%;
     height: 20px;
-    border: 2px black;
     border-radius: 5px;
     margin: 0 20px;
     box-shadow:2px 2px 2px gray; 
@@ -206,12 +205,20 @@ svg{
     color: var(--griscl);
 }
 
-.span1{
+.ingresadoMonto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.spanUno{
     font-size: 1.6em;
     margin-left: 15px;
 }
 
-#input1{
+#ingresadoInput{
     font-size: 1.6em;
     width: 200px;
     height: 40px;
@@ -222,21 +229,13 @@ svg{
     margin-bottom: 5px;
 }
 
-#input1:hover{
+#ingresadoInput:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
 }
 
-#input1::placeholder{
+#ingresadoInput::placeholder{
     font-size: 0.5em;
-}
-
-.ingresado2{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: 100%;
 }
 
 .subrayado{
@@ -246,26 +245,25 @@ svg{
     margin-left: 15px;
 }
 
-.botones{
+.cajaDos{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 80%;
     height: 80px;
-    border: 2px black;
     border-radius: 10px;
     margin: 10px 0;
     box-shadow:5px 5px 10px gray;
     background-color: white;
 }
 
-.botones:hover{
+.cajaDos:hover{
     background-color: var(--griscl);
     transition: 0.3s;
 }
 
-.btn2{
+.btnDos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +271,6 @@ svg{
     color: var(--azulosc);
     width: 45%;
     height: 30px;
-    border: 2px black;
     border-radius: 5px;
     margin: 0 20px;
     box-shadow:2px 2px 2px gray; 
@@ -281,13 +278,13 @@ svg{
     font-weight:600;
 }
 
-.btn2:hover{
+.btnDos:hover{
     background-color: var(--azulmp);
     transition: 0.3s;
     color: white;
 }
 
-.contenedor3{
+.contenedorDos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -295,14 +292,13 @@ svg{
     width: 80%;
 }
 
-.resumen{
+.cajaTres{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 49%;
     height: 120px;
-    border: 2px black;
     border-radius: 10px;
     margin: 10px 0;
     box-shadow:5px 5px 10px gray;
@@ -314,15 +310,16 @@ svg{
     transition: 0.3s;
 }
 
-.resumen1{
+.cajaTitulo{
     display: flex;
     flex-direction: row;
     align-items:center;
     width: 100%;
     height: 40px;
+    margin-bottom: 15px;
 }
 
-.resumen2{
+.cajaGastos, .cajaDisponible{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,12 +327,13 @@ svg{
     width: 100%;
 }
 
-.resumen3{
+.montoGastos, .montoDisponible{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 
 .dineroIngresado{
@@ -345,20 +343,19 @@ svg{
     opacity: 0.8;
 }
 
-.span2{
+.spanDos{
     font-size: 1.2em;
     margin-left: 15px;
+    height: 100%;
+    margin-bottom: 5px;
 }
 
-#p{
+#pGastos, #pDisponible{
     font-size: 1.2em;
     width: 80%;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    background-color: transparent;
+    height: 100%;
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 #p:hover{
@@ -366,14 +363,14 @@ svg{
     transition: 0.3s;
 }
 
-.subrayado2{
+.subrayadoDos{
     content: '';
     border-top: 2px solid black;
     margin-left: 10px;
     width: 85%;
 }
 
-.contenedor6{
+.contenedorTres{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,7 +391,7 @@ img{
     width: 50%;
     height: 80%;
 }
-.principal2{
+.seccionDos{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -404,57 +401,53 @@ img{
     height:calc(100vh - 100px)
 }
 
-#contenedor2{
+.contenedorCuatro{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: stretch;
     width: 95%;
-    height: 100%;
-    border: 2px black;
+    height: auto;
     border-radius: 10px;
     margin: 10px 0;
     box-shadow:5px 5px 10px gray;
     background-color: white;
 }
 
-.contenedor2:hover{
-    background-color: var(--griscl);
-    transition: 0.3s;
-}
-
-.contenedor4{
+.cajaActividad{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 95%;
     margin-top: 20px;
+    margin-left: 10px;
     border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
-.titulo{
+.tituloActividad{
     font-size: 1em;
     margin-bottom: 10px;
     margin-left: 10px;
 }
 
-#formulario{
+#formularioGastos{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: start;
-    width: 95%;
-    height: 100%;
+    width: 100%;
 }
 
-.gastos{
+.cajaConcepto{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 95%;
+    width: 49%;
+    margin-bottom: 20px;
 }
 
-.gastos1{
+.tituloConcepto{
     display: flex;
     align-items:center;
     justify-content: start;
@@ -466,14 +459,18 @@ img{
     opacity: 0.8;
 }
 
-.gastos2{
+.cajaInput{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
-#input3{
+.cajaInputDos{
+    width: 80%;
+}
+
+#gastosInput{
     font-size: 1em;
     width: 80%;
     height: 40px;
@@ -484,18 +481,18 @@ img{
     margin-bottom: 5px;
 }
 
-#input3:hover{
+#gastosInput:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
 }
 
-#input3::placeholder{
+#gastosInput::placeholder{
     font-size: 0.8em;
 }
 
-#input4{
+#montoInput{
     font-size: 1em;
-    width: 80%;
+    width: 60%;
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -504,29 +501,84 @@ img{
     margin-bottom: 5px;
 }
 
-#input4:hover{
+#montoInput:hover{
     background-color: var(--azulcl);
     transition: 0.3s;
 }
 
-#input4::placeholder{
+#montoInput::placeholder{
     font-size: 0.8em;
 }
 
-.span3{
+.spanTres{
     font-size: 1em;
     margin: 0 15px;
 }
 
-.subrayado3{
+#agregar{
+    width: 20px;
+    justify-self: flex-start;
+    background-color: transparent;
+    border: none;
+}
+
+#agregar:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.subrayadoTres{
     content: '';
     border-bottom: 1px solid rgba(0,0,0,0.3);
     width: 100%;
 }
 
-.insertar{
+#listaGastos{
+    min-height: 420px;
+}
+
+.insertado{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.insertado p {
+    width: 30%;
+    font-size: 1.1em;
+}
+
+.insertado .monto{
+    width: 20%;
+    font-size: 1.1em;
+}
+
+.insertado .monto p{
+    width: 70%;
+    font-size: 1em;
+}
+
+.insertado .monto span{
+    font-size: 1em;
+}
+
+.insertado i{
+    width: 5%;
+}
+
+.insertado i:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+
+.monto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
